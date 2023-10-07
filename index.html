@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <form class="card__date">
+            <div class="card__date_day" id="days">
+                <p class="fw-300">DAY</p>
+                <input id="day" class="fw-800" min="1" type="number" placeholder="DD" required>
+                <span class="card__date_day-error error fw-300"></span>
+            </div>
+            <div class="card__date_day" id="months">
+                <p class="fw-300">MONTH</p>
+                <input id="month" class="fw-800" min="1" type="number" placeholder="MM" required>
+                <span class="card__date_month-error "></span>
+            </div>
+            <div class="card__date_day" id="years">
+                <p class="fw-300">YEAR</p>
+                <input id="year" class="fw-800" min="1" type="number" placeholder="YYYY" required>
+                <span class="card__date_year-error"></span>
+            </div>
+        </form>
+        <section class="card__calculate"><button type="submit" id="card__calculate_button"></button></section>
+        <section class="card__age">
+            <p class="fw-800"> <span id="card__age_years">--</span> years</p>
+            <p class="fw-800"> <span id="card__age_months">--</span> months</p>
+            <p class="fw-800"> <span id="card__age_days">--</span> days</p>
+        </section>
+
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
